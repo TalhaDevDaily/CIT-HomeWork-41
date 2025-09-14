@@ -24,12 +24,12 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // if (!name) return setNameError("border-red-500");
-    // if (!email) return setEmailError("border-red-500");
+    if (!name) return setNameError("border-red-500");
+    if (!email) return setEmailError("border-red-500");
 
     // // setNameError("");
 
-    if (!emailRegex.test(email)) return setEmailError("border-red-500");
+    // if (!emailRegex.test(email)) return setEmailError("border-red-500");
     if (!passwordRegex.test(password))
       return setPasswordError("border-red-500");
   };
